@@ -1,0 +1,1 @@
+scrollReveal().reveal('.section-title');
