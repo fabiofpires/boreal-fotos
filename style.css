@@ -155,8 +155,6 @@ header{
 
 .button{
     display: inline-block;
-    background-color: #b28756;
-    color: #fff;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
@@ -165,8 +163,12 @@ header{
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 20px;
+    background-color: #a88d7c;
+    color: #f7f7f7;
 
 }
+
+
 
 .section-aboutus{
     display: flex;
@@ -224,7 +226,7 @@ header{
 }
 
 .section-service p{
-    color: #fff
+    color: #fff;
     margin-top: 10px;
     font-size: 13px;
 
@@ -239,11 +241,11 @@ header{
 
 .section-projects--filters{
     border: 1px solid #ccc;
-    background-color: #eee;
+    background-color: #a88d7c;
     border-radius: 30px;
     display: inline-block;
     padding: 0px 20px;
-    box-shadow: 2px 2px 2px #000;
+    box-shadow: 2px 2px 2px rgb(26, 25, 25);
 
 }
 
@@ -257,13 +259,13 @@ header{
     padding: 10px;
     text-transform: uppercase;
     font-size: 15px;
-    border-left: 1px solid #999;
-    color: #555;
+    border-left: 1px solid #fff;
+    color: #fff;
     border-radius: 3px solid #eee;
 }
 
 .section-projects--filters li:hover{
-    border-bottom: 3px solid #b28756;
+    border-bottom: 8px solid #fff;
 }
 
 .section-projects--filters li:first-child {
@@ -329,4 +331,100 @@ header{
     background-size: cover;
     background-position: top;
     overflow: hidden;
+}
+
+.section-map{
+    background-image: url('images/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-map--area{
+    width: 100vw;
+    max-width: 1140vw;
+    margin: auto;
+   
+}
+
+.section-map--info{
+    width: 50%;
+    padding: 30px;
+    margin-left: 30px;
+    background-color: #fff;
+    color: #000;
+}
+
+.section-map--info-item{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.section-map--info-item-img{
+    width: 30px;
+    height: 30px;
+    background-color: #999;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.section-map--info-item-img img{
+    width: 15px;
+    height: auto;
+}
+
+footer{
+    width: 100vw;
+    height: 200px;
+    background-color: #a88d7c;
+    display: flex;
+}
+
+.redes{
+    background-color: purple;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 150px;
+    border-radius: 20px;
+
+}
+
+.redetotal{
+    margin-left: 700px;
+    
+}
+
+.redes img{
+    margin-right: 3px;
+    height: 10px;
+    width: 8px;
+    align-items: center;
+    
+}
+
+.redes:hover{
+   background-color: #000;
+}
+
+.texto-footer{
+    margin-top: 170px;
+    margin-left: 420px;
+}
+
+.texto-footer h4{
+    font-style: inherit;
+    color: #f7f7f7;
+    font-weight: bolder;
 }
