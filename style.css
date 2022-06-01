@@ -5,8 +5,8 @@
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-family: 'Indie Flower', cursiva;
+    font-size: 20px;
     overflow-x: hidden;
 }
 
@@ -382,7 +382,7 @@ header{
 
 footer{
     width: 100vw;
-    height: 200px;
+    height: 370px;
     background-color: #a88d7c;
     display: flex;
 }
@@ -396,20 +396,20 @@ footer{
     display: inline-flex;
     justify-content: center;
     padding: 5px;
-    margin-top: 150px;
+    margin-top: 280px;
     border-radius: 20px;
 
 }
 
 .redetotal{
-    margin-left: 700px;
+    margin-left: 40px;
     
 }
 
 .redes img{
     margin-right: 3px;
-    height: 10px;
-    width: 8px;
+    height: 15px;
+    width: 12px;
     align-items: center;
     
 }
@@ -419,12 +419,334 @@ footer{
 }
 
 .texto-footer{
-    margin-top: 170px;
-    margin-left: 420px;
+    margin-top: 140px;
+    margin-left: 430px;
 }
 
 .texto-footer h4{
     font-style: inherit;
     color: #f7f7f7;
     font-weight: bolder;
+}
+
+.formulario{
+    background-color: blueviolet;
+    margin-left: 320px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px #333;
+}
+
+.formulario input{
+    margin-top: 2px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 14vw;
+}
+
+.formulario h3{
+    color: white; 
+    margin-left: 50px;
+}
+
+.formulario h5{
+    color: #f7f7f7;
+    margin-left: 20px;
+    margin-top: 3px;
+    font-size: medium;
+}
+
+.input-text{
+    height: 100px;
+}
+
+button{
+    background-color: #a88d7c;
+    color: #f7f7f7;
+    border-radius: 8px;
+    width: 50px;
+    box-shadow: 2px 2px 2px #333;
+    border: #a88d7c;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.menu-opener{
+    display: none;
+}
+
+/* RESPONSIVIDADE DO SITE */
+
+@media (min-width:450px) and (max-width: 800px){
+
+   nav{
+       position: absolute;
+       z-index: 99;
+       width: 55px;
+       height: 60px;
+       margin-right: 30px;
+       top: 2px;
+       right: 0;
+       flex: wrap;
+       background-image: url('images/menu.png');
+
+   }
+   
+   menu ul{
+       flex-direction: column;
+     
+   }
+
+   .menu li a{
+       
+     display: none;
+       
+   }
+
+   
+   .logo{
+       margin-left: 10px;
+   }
+
+   .banner {
+    height: 45vh;
+    background-color: #333;
+    background-image: url('images/capa.jpg');
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+}
+
+   
+   .section-aboutus{
+       flex-direction: column;
+   }
+
+   .section-aboutus-left{
+       margin-left: 30px;
+       margin-right: 30px;
+       margin-bottom: 30px;
+   }
+
+   .section-aboutus-right{
+       width: auto;
+       margin-bottom: 20px;
+   }
+
+   .section-projects--filters{
+      border: 1px solid #ccc;
+      background-color: #a88d7c;
+      border-radius: 30px;
+      display: inline-block;
+      padding: 0px 2px  5px 10px;
+      box-shadow: 2px 2px 2px rgb(26, 25, 25);
+      width: 90vw;
+      height: 40px;
+
+   }
+
+   .section-projects--filters li{
+    display: inline-block;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-left: 1px solid #fff;
+    color: #fff;
+    border-radius: 3px solid #eee;
+}
+
+   .section-services{
+       flex-wrap: wrap;
+   }
+
+   .section-service{
+       min-width: 50%;
+       margin-bottom: 30px;
+       border-right: 0;
+   }
+
+   .section-service:first-child{
+       border-left: 0;
+   }
+
+   .section-map--info{
+       width: auto;
+   }
+
+   .section-map{
+       padding-left: 30px;
+       padding-right: 30px;
+   }
+
+   .section-map--area{
+       width: auto;;
+   }
+
+   .section-map--info-item{
+       margin-bottom: 20px;
+     
+   }
+
+   .section-map--info-item:last-child{
+       margin-bottom: 0;
+   }
+
+   .banner-2 {
+    height: 50vh;
+    background-color: #333;
+    background-image: url('images/banner2.png');
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+}
+
+footer{
+    width: 100vw;
+    height: 370px;
+    background-color: #a88d7c;
+    display: flex;
+}
+
+.redes{
+    background-color: purple;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 30px;
+    border-radius: 20px;
+    flex-direction: row;
+
+}
+
+.redetotal{
+    margin-top: 50px;
+    
+}
+
+.redes img{
+
+    height: 15px;
+    width: 12px;
+    align-items: center;
+    
+}
+
+.redes:hover{
+   background-color: #000;
+}
+
+.texto-footer{
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+
+.texto-footer h4{
+    font-style: inherit;
+    color: #f7f7f7;
+    font-weight: bolder;
+    font-size: x-small;
+    margin-left: 3px;
+    margin-bottom: 100px;
+}
+
+.formulario{
+    background-color: blueviolet;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 280px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 3px #333;
+}
+
+.formulario input{
+    margin-top: 2px;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: 25vw;
+}
+
+.formulario h3{
+    color: white; 
+    margin-left: 50px;
+}
+
+.formulario h5{
+    color: #f7f7f7;
+    margin-left: 20px;
+    margin-top: 3px;
+    font-size: medium;
+}
+
+.input-text{
+    height: 100px;
+    
+}
+
+button{
+    background-color: #a88d7c;
+    color: #f7f7f7;
+    border-radius: 8px;
+    width: 50px;
+    box-shadow: 2px 2px 2px #333;
+    border: #a88d7c;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+}
+
+@media (max-width:412px){
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu li a{
+        font-weight: bold;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .menu li.active a{
+        border: 0;
+        color: #b28756;
+    }
+    
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+
+    .logo{
+        margin-left: 30px;
+    }
+
+    .section-aboutus{
+        flex-direction: column;
+    }
+    
+    .section-aboutus-left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
 }
